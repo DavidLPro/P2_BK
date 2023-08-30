@@ -1,0 +1,735 @@
+/* Generale */
+
+html {
+  font-family: Raleway;
+}
+body {
+  font-family: Raleway;
+  width: 100%;
+  margin: 0;
+}
+.contenu {
+  max-width: 993px;
+  margin: auto;
+}
+/* ********************************************************* */
+/* *******************  BARRE DE NAGIVATION **************** */
+/* ********************************************************* */
+
+/* block */
+.nav-bar-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+header #logo img {
+  width: 150px;
+  padding: 25px 0px;
+}
+
+/* Lien de navigation  NAV */
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  margin: auto;
+}
+
+header nav ul li {
+  padding: 50px 25px;
+  margin: 0px 20px 0px 20px;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+
+header nav ul li:hover {
+  border-top: 2px solid #0065FC;
+  color: #0065FC;
+  
+}
+
+/* header nav ul li a:hover {
+  color: #0065FC;
+} */
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+/* ********************************************************* */
+/* *******************  BARRE DE RECHERCHE ***************** */
+/* ********************************************************* */
+
+/* Block & Icone */
+.search-block {
+  margin-top: 30px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.fa-map-marker-alt {
+  background-color: #f2f2f2;
+  border-radius: 15px 0 0 15px;
+  padding: 20px;
+}
+.fa-solid.fa-magnifying-glass {
+  display: none;
+}
+
+/* Formulaire input */
+.search-block input {
+  background-color: transparent;
+  padding: 18px;
+  border: 2px solid #f2f2f2;
+  border-right: transparent;
+}
+
+::placeholder {
+  color: inherit;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Boutton Rechercher */
+.search-block button {
+  background-color: #0065fc;
+  color: #f2f2f2;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 15px 15px 0;
+  border-style: none;
+  cursor: pointer;
+}
+.search-block button:active {
+  transform: scale(0.98);
+  box-shadow: 0px 0px 22px 1px #0065fc;
+}
+.search-block button:hover {
+  transform: scale(1.1);
+}
+
+/* ********************************************************* */
+/* *******************  BARRE DE FILTRES ******************* */
+/* ********************************************************* */
+
+/* Block */
+.filter-block {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 2%;
+  align-items: center;
+}
+.filter-block a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Filters : Button */
+.filter-button {
+  display: flex;
+  align-items: center;
+  border: 2px solid #f2f2f2;
+  border-radius: 50px;
+}
+.filter-button span {
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.filter-block .filter-button i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #deebff;
+  color: #0065fc;
+  margin-left: -2px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Filters : Hover */
+
+.filter-button:hover {
+  color: white;
+  background-color: #0065fc;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.filter-button:active {
+  box-shadow: 0px 0px 22px 1px #0065fc;
+}
+
+/* Filters : Infos */
+
+.info {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px 20px 0px;
+  gap: 0.5%;
+}
+.fa-solid.fa-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0065fc;
+  border: 1.5px solid #f2f2f2;
+  margin-left: -2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+/* *********************************************************/
+/* ************ BLOCK : HEBERGEMENT A MARSEILLE ********** */
+/* *********************************************************/
+
+
+/* Code couleur */
+.blue {
+  color: #0065fc;
+}
+.blue-light {
+  color: #deebff;
+}
+.grey {
+  color: #f2f2f2;
+}
+
+.block-hp h2{
+  margin:2% 0;
+}
+/* Définition des blocks principaux et séparation */
+.block-hp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-hp > div {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 20px;
+}
+.hebergement a, .populaires a {
+  text-decoration: none;
+  color: inherit;
+  width: 30%;
+  height: 85%;
+}
+
+.block-hp h2{
+  margin:2% 0;
+}
+
+
+.hebergement {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.populaires {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.pop-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  /* -------------Vignette & Block : HEBERGEMENT ----------- */
+
+
+/* Vignette d'hebergement marseille*/
+
+.vig-heb-3xcolun {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0 ;
+  height: auto;
+  margin-bottom: 20px;
+}
+.imag-heb {
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 100px; 
+}
+
+.vig-heberg-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: white;
+  box-shadow: 1px 1px 10px 1px grey;
+  border-radius: 20px;
+  padding: 3px;
+}
+ /* Polices & Hover */
+.vig-heberg-card figcaption{
+  padding:2% 2%;
+}
+.vig-heberg-card h4, p {
+  margin:1.5% 0;
+  font-size: small;
+}
+.vig-heberg-card  span {
+  font-weight: bold;
+}
+.vig-heberg-card:hover{
+  transform: scale(1.07);
+}
+.getmore{
+  font-size: small;
+}
+.getmore:hover{
+  text-decoration: underline;
+  color: blue;
+}
+
+/* ------ Vignettes & Block : POPULAIRES------ */
+
+/* Vignette populaires */
+.vig-pop-card  figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+
+
+.vig-pop-card {
+  background-color:white;
+  display: flex;
+  gap: 5%;
+  height: 26%;
+  margin: 0;
+  margin-top: 20px;
+  box-shadow: 1px 1px 10px 1px grey;
+  border-radius: 20px;
+  padding: 3px;
+  
+}
+
+.imag-pop {
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+  width: 40%;
+  height: 100%; 
+}
+ /* Polices & Hover */
+
+.vig-pop-card h4 {
+  margin: 0;
+  font-size: small;
+}
+.vig-pop-card p{
+  margin-top: 1%;
+  font-size: small;
+}
+.vig-pop-card  span {
+  font-weight: bold;
+}
+.vig-pop-card:hover{
+    transform: scale(1.07);
+}
+
+.fas.fa-star {
+  font-size: x-small;
+}
+
+/* *********************************************************/
+/* ************ BLOCK : ACTIVITE A MARSEILLE ************* */
+/* *********************************************************/
+
+
+.block-act-main{
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+  flex-wrap: wrap;
+  margin: 0px 25px 0px 25px;
+}
+
+.vig-act-2xlittle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 229px;
+  height: 340px;
+}
+
+.vig-act-card {
+
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 20px;
+}
+
+.vig-act-Mediumcard {
+  height: 45%;
+  margin: 0;
+  border-radius: 20px;
+}
+
+.vig-act-Smallcard{
+  height: 35%;
+  margin: 00;
+  border-radius: 20px;
+}
+
+.img-activ {
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+    /* Police & hover */
+.vig-act-2xlittle figure,
+.vig-act-2xlittle figure figcaption
+{
+  box-shadow: 1px 1px 10px 1px grey;
+}
+
+.vig-act-2xlittle figure figcaption {
+  background-color :white;
+  border-radius: 0 0 20px 20px;
+  padding :3% 5%;
+  font-weight: bold;
+}
+.vig-act-2xlittle h4 {
+  margin:1.5% 0;
+  font-size: small;
+}
+
+.block-act-main .vig-act-2xlittle figure:hover {
+  transform: scale(1.07);
+}
+
+.vig-act-3xbig{
+  display: flex;
+  gap: 5%;
+}
+
+/* *********************************************************/
+/* ************ BLOCK : FOOTER  ************* */
+/* *********************************************************/
+
+footer {
+  margin-top: 5%;
+  width: 100%;
+}
+.footer-block {
+  background-color: #F2F2F2;
+  display: flex;
+  max-width: 100%;
+  width: 1440px;
+  margin: auto;
+
+  padding: 0 1.5%;
+  box-sizing: border-box;
+}
+.footer-title {
+  width: 45%;
+  padding: 1.5% 1.5%;
+}
+.footer-title{
+  font-size: small;
+}
+.footer-block a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  margin: 2% 0;
+  font-size: smaller;
+}
+.footer-block a:hover{
+  color: #0065FC;
+  text-decoration-line: underline;
+}
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+/* mmmmmmmmmmmm @ MEDIA QUEERY @ mmmmmmmmmm */
+/* mmmmmmmmmm @ max W: 993px PC @ mmmmmmmmm */
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+
+@media (max-width:992px) {
+  body{
+    width: 100%;
+  }
+
+  .contenu{
+    width: 95%;
+  }
+  
+  .block-hp{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    margin : auto;
+  }
+
+  .populaires{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .hebergement {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  
+  .vig-heb-3xcolun{
+    margin: 1.5% 0;
+  }
+  .imag-pop {
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+    width: 25%;
+    height: 100%; 
+  }
+
+
+
+}
+
+    /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+    /* mmmmmm @ MEDIA QUEERY @ mmmmmmmmmmm */ 
+    /* mm @ max W: 769-990px TABLETTE @mmm */
+    /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+
+@media (min-width: 769px) and (max-width:992px) {
+  
+/* mmmmmmmm @ Heberg & Pop @ mmmmmmmmm */
+/* mmmmmm @ max W: 769-990px @ mmmmmmmmmmm */
+  .block-pop{
+    height: 481px;
+  }
+  .imag-pop{
+  width: 30%;
+  }
+  .vig-pop-card{
+    height: 26%;
+  }
+
+
+/* mmmmmmmm @ Activité @ mmmmmmmmm */
+/* mmmmmm @ max W: 769-990px @ mmmmmmmmmmm */
+
+  .vig-act-3xbig{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 380px;
+    gap: 3%;
+  }
+  .vig-act-2xlittle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    height: 80%;
+  }
+  .vig-act-Mediumcard, .vig-act-Smallcard {
+    height: 38%;
+  }
+
+}
+    /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+    /* mmmmmm @ MEDIA QUEERY @ mmmmmmmmmmm */ 
+    /* mmmmm @ max W: 768px MOBILE @mmmmm */
+    /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+
+@media (max-width:768px) {
+  body{
+    width: 100%;
+  }
+  .contenu{
+    width: 90%;
+  }
+    /* mmmmmm @ Barre de Navigation @ mmmm */ 
+    /* mmmmmm @ max W: 768px @ mmmmmmmmmmm */
+
+  .nav-bar-box {
+      display: block;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      }
+  header{
+    flex-direction: column;
+  }
+  #logo {
+    margin-left: 120px;
+    width: 40px;
+  }
+  .nar-bar-link{
+    display: flex;
+    align-items:start;
+  }
+  header nav ul {
+    width: 100%;
+    
+  }
+  nav{
+    margin-left: -45px;
+  }
+  header nav ul li:hover {
+      border-bottom: 3px solid #0065FC;
+      border-top: 3px solid transparent;
+  }
+  header nav ul li {
+      border-bottom: 3px solid #F2F2F2;
+      width: 100%;
+      padding: 20px;
+      margin: 0px;
+      }
+
+    /* mmmmmm @ Barre de Filtres @ mmmmm */
+    /* mmmmmm @ max W: 768px @ mmmmmmmmmmm */
+
+  .filter-block{
+      display: flex;
+      justify-content:flex-start;
+      flex-direction: column; /* où bien flex wrap */
+      align-items: flex-start;
+  }
+  .filter-button{
+    margin-bottom: 10px;
+  }
+    
+    /* mmmmmm @ Button Rechercher @ mmmmm */
+    /* mmmmmm @ max W: 768px @ mmmmmmmmmmm */
+  .search-block{
+      display: flex;
+      flex-direction: row;
+  }
+  .search-block input{
+    min-width: 30%;
+    width: 95%;
+  }
+  .search-block .span-search{
+      display: none;
+  } 
+
+  .search-block input{
+      padding-right: 27%;
+      margin-right:-15px;
+  }
+  .fa-solid.fa-magnifying-glass{
+      color: #F2F2F2;
+      display: block;
+  }
+  #butt-span-search{
+      width: 80px;
+      border-radius: 15px;
+  }
+    /* mmmmmmmm @ Heberg & Pop @ mmmmmmmmm */
+    /* mmmmmm @ max W: 768px @ mmmmmmmmmmm */
+
+  .block-hp{
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  .block-pop{
+    height: 481px;
+  }
+  .imag-pop{
+    width: 40%;
+  }
+  .vig-pop-card{
+    height: 25%;
+  }
+
+  .vig-pop-card{
+    width: auto;
+  }
+  .vig-pop-card figcaption {
+    padding: 4% 0;
+  }
+  .populaires {
+    width: 100%;
+    margin: 2% 0;
+  }
+  .fas.fa-star {
+    font-size: x-small;
+  }
+  
+  .vig-heb-3xcolun{
+    display: block;
+    flex-wrap: wrap;
+    
+  }
+  .hebergement {
+    width: 100%;
+    height: 15%;
+  }
+  .vig-heberg-card{
+    margin: 3.5% 0;
+  }
+  
+    /* mmmmmmmm @ Activité @ mmmmmmmmm */
+    /* mmmmmm @ max W: 768px @ mmmmmmmmmmm */
+
+  .vig-act-2xlittle {
+    width: 100%;
+    height: auto;
+  }
+  .vig-act-card{
+    width: 100%;
+    margin :0;
+    
+  }
+  .vig-act-Smallcard{
+    height: auto;
+    margin:0;
+  
+  }
+  .vig-act-Mediumcard {
+    margin:0;
+    height: auto;
+  }
+  .block-act-main figure{
+    margin-bottom: 3.5%;
+  }
+
+  .block-act-main figure figcaption {
+    padding-left: 2%;
+  }
+
+  .img-activ{
+    width: 100%;
+    height: 150px;
+  }  
+  
+  .block-act-main{
+    display: block;
+  }
+  .vig-act-3xbig{
+    display: block;
+  }
+
+
+    /* mmmmmmmm @ Footer@ mmmmmmmmm */
+    /* mmmmmm @ max W: 768px @ mmmmmmmmmmm */
+    
+  .footer-block{
+    display: block;
+    }
+
+}
